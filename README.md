@@ -34,6 +34,9 @@ The waveform below illustrates the timing and transitions across all 8 states, c
 
 If you have Icarus Verilog (`iverilog`) and `vvp` installed, you can compile and run the simulation from your terminal:
 
+If not then you can use EDA playground by setting the applicable tools and simulators (https://edaplayground.com/)
+
 ```bash
 iverilog -Wall -g2012 design.sv testbench.sv
 ./a.out
+
