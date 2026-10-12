@@ -1,0 +1,31 @@
+module tb_fullAdder;
+  reg a;
+  reg b;
+  reg cin;
+  wire sum;
+  wire cout;
+  
+  fullAdder dut(
+    .a(a),
+    .b(b),
+    .cin(cin),
+    .sum(sum),
+    .cout(cout)
+  );
+  
+  integer i;
+  
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars(0, tb_fullAdder);
+    
+    $display("Time\t | a | b | cin | sum | carry |");
+    $monitor("%0t\t | %b | %b | %b | %b | %b |", $time, a, b, cin, sum, cout );
+    
+    for (i = 0; i < 8; i = i + 1) begin
+      {a, b, cin} = i;
+      #10;
+    end
+    $finish;
+  end
+endmodule
