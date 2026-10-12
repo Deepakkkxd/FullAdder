@@ -19,12 +19,14 @@ The design was exhaustively tested using an automated testbench featuring a loop
 ### 1. Console Simulation Log
 The automated testbench prints out a clean truth table verifying every combination of inputs against expected arithmetic outputs[cite: 2]:
 
-![Console Output Log](docs/console_log.png)[cite: 2]
+<img width="353" height="217" alt="image" src="https://github.com/user-attachments/assets/f4f89371-1c5e-426a-91d9-2a518916adbd" />
+
 
 ### 2. EPWave Waveform Simulation
 The waveform below illustrates the timing and transitions across all 8 states, confirming zero propagation errors and correct carry-ripple behavior[cite: 1]:
 
-![EPWave Waveform](docs/waveform.png)[cite: 1]
+<img width="1833" height="197" alt="image" src="https://github.com/user-attachments/assets/397b77e6-675a-44b6-88b8-53cb18a75f63" />
+
 
 ---
 
